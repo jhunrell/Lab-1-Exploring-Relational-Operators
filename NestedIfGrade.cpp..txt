@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int grade;
+
+    // Ask for student's grade
+    cout << "Enter grade: ";
+    cin >> grade;
+
+    // Nested if statements to display remark
+    if (grade >= 75) {
+        if (grade >= 90)
+            cout << "Remark: Excellent" << endl;
+        else if (grade >= 80)
+            cout << "Remark: Very Good" << endl;
+        else
+            cout << "Remark: Satisfactory" << endl;
+    } else {
+        cout << "Remark: Fail" << endl;
+    }
+
+    return 0;
+}
